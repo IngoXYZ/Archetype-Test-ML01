@@ -159,12 +159,16 @@ class ArchetypenTest {
       // Get top 3 archetypes
       const top3 = this.results.slice(0, 3);
       
+      // Get business recommendation for dominant archetype
+      const businessRec = formatBusinessRecommendationText(this.results[0].name);
+      
       const data = {
         email: this.userInfo.email,
         name: this.userInfo.name,
         archetype: this.results[0].name,
         archetypePercentage: this.results[0].percentage,
-        top3Results: top3
+        top3Results: top3,
+        businessRecommendation: businessRec
       };
       
       console.log('📤 Data being sent:', data);

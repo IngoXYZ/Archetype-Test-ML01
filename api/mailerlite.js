@@ -15,7 +15,8 @@ const REQUIRED_FIELDS = [
   { key: 'archetype_2', name: 'Archetype 2', type: 'text' },
   { key: 'archetype_2_percent', name: 'Archetype 2 Percent', type: 'number' },
   { key: 'archetype_3', name: 'Archetype 3', type: 'text' },
-  { key: 'archetype_3_percent', name: 'Archetype 3 Percent', type: 'number' }
+  { key: 'archetype_3_percent', name: 'Archetype 3 Percent', type: 'number' },
+  { key: 'business_recommendation', name: 'Business Recommendation', type: 'text' }
 ];
 
 // Function to ensure custom fields exist
@@ -90,14 +91,16 @@ export default async function handler(req, res) {
     await ensureCustomFieldsExist();
 
     // Extract request data
-    const { email, name, archetype, archetypePercentage, top3Results } = req.body;
+    const { email, name, archetype, archetypePercentage, top3Results, businessRecommendation } = req.body;
 
     if (!email) {
       return res.status(400).json({ error: 'Email address required' });
     }
 
     console.log('📮 Adding to MailerLite:', email);
-    console.log('🎯 Archetype:', archetype, '(' + archetypePercentage + '%)');console.log('📊 Top 3:', top3Results);
+    console.log('🎯 Archetype:', archetype, '(' + archetypePercentage + '%)');
+    console.log('📊 Top 3:', top3Results);
+    console.log('💼 Business Recommendation:', businessRecommendation ? 'Included' : 'Not provided');
 
     // MailerLite API URL
     const apiUrl = 'https://connect.mailerlite.com/api/subscribers';
@@ -117,7 +120,9 @@ export default async function handler(req, res) {
         archetype_2: top3Results?.[1]?.name || '',
         archetype_2_percent: top3Results?.[1]?.percentage || 0,
         archetype_3: top3Results?.[2]?.name || '',
-        archetype_3_percent: top3Results?.[2]?.percentage || 0
+        archetype_3_percent: top3Results?.[2]?.percentage || 0,
+        // Business recommendation based on archetype
+        business_recommendation: businessRecommendation || ''
       },
       // Add to specific group for automation trigger
       groups: [MAILERLITE_GROUP_ID]
