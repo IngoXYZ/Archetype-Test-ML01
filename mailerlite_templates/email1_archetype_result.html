@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin: 0; padding: 0; background-color: #1a1a1a;">
+  <div style="font-family: 'Libre Franklin', Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #363940; color: #ffff; padding: 40px; border-radius: 12px;">
+    
+    <!-- Logo - Replace with your logo URL -->
+    <div style="text-align: center; margin-bottom: 30px;">
+      <h1 style="color: #1A9A9A; font-size: 28px; font-family: 'Roboto Condensed', sans-serif; margin: 0;">Business Archetypes</h1>
+    </div>
+    
+    <h2 style="color: #1A9A9A; font-size: 24px; font-family: 'Roboto Condensed', sans-serif;">🎯 Your Archetype Assessment Results</h2>
+    
+    <p style="line-height: 1.7; color: #e0e0e0; font-size: 16px;">
+      Hey {$name},
+    </p>
+    
+    <p style="line-height: 1.7; color: #e0e0e0; font-size: 16px;">
+      Thank you for completing the Business Archetypes assessment! Your results reveal powerful insights about your leadership style and business approach.
+    </p>
+    
+    <div style="background: #2a2d33; padding: 25px; border-radius: 8px; margin: 25px 0; border-left: 4px solid #1A9A9A;">
+      <h3 style="color: #1A9A9A; margin-top: 0; font-family: 'Roboto Condensed', sans-serif; font-size: 20px;">Your Dominant Archetype:</h3>
+      <p style="color: #ffff; font-size: 32px; font-weight: bold; margin: 10px 0;">
+        {$archetype}
+      </p>
+      <p style="color: #1A9A9A; font-size: 24px; font-weight: bold; margin: 0;">
+        {$archetype_percent}%
+      </p>
+    </div>
+    
+    <div style="background: #2a2d33; padding: 20px; border-radius: 8px; margin: 25px 0;">
+      <h3 style="color: #1A9A9A; margin-top: 0; font-family: 'Roboto Condensed', sans-serif;">Your Complete Top 3 Archetypes:</h3>
+      <div style="color: #e0e0e0; line-height: 2.2;">
+        <p style="margin: 8px 0; font-size: 16px;">
+          <span style="font-size: 20px;">👑</span> <strong>1. {$archetype_1}</strong> - {$archetype_1_percent}%
+        </p>
+        <p style="margin: 8px 0; font-size: 16px;">
+          <span style="font-size: 20px;">🥈</span> <strong>2. {$archetype_2}</strong> - {$archetype_2_percent}%
+        </p>
+        <p style="margin: 8px 0; font-size: 16px;">
+          <span style="font-size: 20px;">🥉</span> <strong>3. {$archetype_3}</strong> - {$archetype_3_percent}%
+        </p>
+      </div>
+    </div>
+    
+    <p style="line-height: 1.7; color: #e0e0e0; font-size: 16px;">
+      Understanding your archetypes is just the beginning. The real transformation happens when you integrate these insights into your business and leadership approach.
+    </p>
+    
+    <p style="line-height: 1.7; color: #e0e0e0; font-size: 16px;">
+      Your archetype combination reveals not just your strengths, but also the shadow patterns that might be holding you back from your full potential.
+    </p>
+    
+    <div style="background: #2a2d33; padding: 20px; border-radius: 8px; margin: 25px 0; border-left: 4px solid #1A9A9A;">
+      <p style="color: #e0e0e0; margin: 0; line-height: 1.7;">
+        <strong style="color: #1A9A9A;">Important insight:</strong> Your archetype doesn't limit you—it's your starting point for growth. The shadow work we'll explore helps you integrate the rejected parts of yourself that hold the key to your next level.
+      </p>
+    </div>
+    
+    <p style="line-height: 1.7; color: #e0e0e0; font-size: 16px;">
+      <strong>Test completed on:</strong> {$test_date}
+    </p>
+    
+    <p style="line-height: 1.7; color: #e0e0e0; font-size: 16px;">
+      Over the next few days, I'll send you specific guidance on how to work with your archetype for maximum impact. Tomorrow, I'll share how your {$archetype} archetype can guide your next strategic moves.
+    </p>
+    
+    <p style="line-height: 1.7; color: #e0e0e0; font-size: 16px;">
+      Here's to understanding yourself at a deeper level,
+    </p>
+    
+    <p style="color: #1A9A9A; font-weight: bold; font-size: 16px;">Ingo</p>
+    <p style="color: #888; font-size: 14px; margin-top: 0;">The Small Reset</p>
+    
+    <div style="text-align: center; margin: 30px 0; padding-top: 20px; border-top: 1px solid #444;">
+      <p style="color: #888; font-size: 13px; font-style: italic;">
+        "Until you make the unconscious conscious, it will direct your life and you will call it fate."<br>— Carl Jung
+      </p>
+    </div>
+    
+  </div>
+</body>
+</html>

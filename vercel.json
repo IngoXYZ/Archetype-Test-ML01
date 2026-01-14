@@ -1,0 +1,17 @@
+
+{
+  "functions": {
+    "api/mailchimp.js": {
+      "maxDuration": 10
+    },
+    "api/mailerlite.js": {
+      "maxDuration": 10
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+════════════════════════════════════════════════════════════════
+  🚀 QUICK PUSH COMMANDS - COPY & PASTE READY
+════════════════════════════════════════════════════════════════
+
+📍 PROJECT LOCATION:
+   /home/ubuntu/archetypen_static
+
+📦 FILES STAGED:
+   39 files ready to commit
+
+════════════════════════════════════════════════════════════════
+  STEP 1: CREATE GITHUB REPO
+════════════════════════════════════════════════════════════════
+
+Go to: https://github.com/new
+- Name: business-archetypes-static
+- Don't initialize with README
+
+════════════════════════════════════════════════════════════════
+  STEP 2: PUSH TO GITHUB (Copy these commands)
+════════════════════════════════════════════════════════════════
+
+cd /home/ubuntu/archetypen_static
+
+git commit -m "Initial commit: Business Archetypes with MailerLite integration (English)"
+
+git remote add origin https://github.com/YOUR_USERNAME/business-archetypes-static.git
+
+git branch -M main
+
+git push -u origin main
+
+════════════════════════════════════════════════════════════════
+  STEP 3: DEPLOY TO VERCEL
+════════════════════════════════════════════════════════════════
+
+Option A: Auto-Deploy (Recommended)
+→ Go to: https://vercel.com/new
+→ Import your GitHub repo
+→ Click "Deploy"
+
+Option B: CLI Deploy
+→ Run: vercel --prod
+
+════════════════════════════════════════════════════════════════
+  AFTER DEPLOYMENT
+════════════════════════════════════════════════════════════════
+
+1. Test your live app at the Vercel URL
+2. Import email templates to MailerLite
+3. Create automation in MailerLite (see MAILERLITE_SETUP_GUIDE.md)
+4. Activate automation
+
+════════════════════════════════════════════════════════════════
+
+✅ All files are staged and ready!
+📄 See PUSH_TO_GIT.md for detailed instructions
+📘 See README.md for project documentation
+
+════════════════════════════════════════════════════════════════

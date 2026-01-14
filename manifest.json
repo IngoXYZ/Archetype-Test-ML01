@@ -1,0 +1,25 @@
+
+{
+  "name": "Business Archetypes Assessment",
+  "short_name": "Archetypes",
+  "description": "Discover your dominant business archetype based on Carl Jung's theory with 60 carefully selected questions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSIjNGY0NmU1Ii8+CjxwYXRoIGQ9Ik05NiA0MEw0MCA5NkwxNTIgOTZMOTYgNDBaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBkPSJNOTYgMTUyTDQwIDk2TDE1MiA5Nkw5NiAxNTJaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjciLz4KPC9zdmc+Cg==",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiBmaWxsPSIjNGY0NmU1Ii8+CjxwYXRoIGQ9Ik0yNTYgMTAwTDEwMCAyNTZMNDEyIDI1NkwyNTYgMTAwWiIgZmlsbD0id2hpdGUiLz4KPHN0YXIgZD0iTTI1NiA0MTJMMTAwIDI1Nkw0MTIgMjU2TDI1NiA0MTJaIiBmaWxsPSJ3aGl0ZSIgZmlsbC1vcGFjaXR5PSIwLjciLz4KPC9zdmc+Cg==",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "education", "productivity"],
+  "lang": "en",
+  "orientation": "portrait"
+}
