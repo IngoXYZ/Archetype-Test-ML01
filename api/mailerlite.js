@@ -7,15 +7,15 @@ const MAILERLITE_GROUP_ID = '176508406386918528';
 
 // Define required custom fields
 const REQUIRED_FIELDS = [
-  { key: 'archetype', name: 'Archetype', type: 'TEXT' },
-  { key: 'archetype_percent', name: 'Archetype Percent', type: 'NUMBER' },
-  { key: 'test_date', name: 'Test Date', type: 'TEXT' },
-  { key: 'archetype_1', name: 'Archetype 1', type: 'TEXT' },
-  { key: 'archetype_1_percent', name: 'Archetype 1 Percent', type: 'NUMBER' },
-  { key: 'archetype_2', name: 'Archetype 2', type: 'TEXT' },
-  { key: 'archetype_2_percent', name: 'Archetype 2 Percent', type: 'NUMBER' },
-  { key: 'archetype_3', name: 'Archetype 3', type: 'TEXT' },
-  { key: 'archetype_3_percent', name: 'Archetype 3 Percent', type: 'NUMBER' }
+  { key: 'archetype', name: 'Archetype', type: 'text' },
+  { key: 'archetype_percent', name: 'Archetype Percent', type: 'number' },
+  { key: 'test_date', name: 'Test Date', type: 'text' },
+  { key: 'archetype_1', name: 'Archetype 1', type: 'text' },
+  { key: 'archetype_1_percent', name: 'Archetype 1 Percent', type: 'number' },
+  { key: 'archetype_2', name: 'Archetype 2', type: 'text' },
+  { key: 'archetype_2_percent', name: 'Archetype 2 Percent', type: 'number' },
+  { key: 'archetype_3', name: 'Archetype 3', type: 'text' },
+  { key: 'archetype_3_percent', name: 'Archetype 3 Percent', type: 'number' }
 ];
 
 // Function to ensure custom fields exist
