@@ -46,34 +46,48 @@
         .benefit-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 0.5rem;
+            gap: 1rem;
         }
         
         @media (max-width: 768px) {
             .benefit-grid {
                 grid-template-columns: 1fr;
-                gap: 0.5rem;
             }
         }
     </style>
 </head>
 
-<body class="min-h-screen" style="background-color: #1A365D;">
+<body class="bg-gray-50 min-h-screen">
     <!-- Main Content -->
-    <main class="max-w-3xl mx-auto px-4 py-12">
+    <main class="max-w-2xl mx-auto px-4 py-12">
         
         <!-- Introduction Screen -->
         <div id="intro-screen" class="fade-in">
-            <div class="rounded-2xl shadow-lg p-8 md:p-12" style="background-color: #1A365D;">
+            <div class="bg-white rounded-2xl shadow-lg p-8 md:p-12">
+                <!-- Icon -->
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Title -->
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-3">Discover Your Archetype</h1>
+                <p class="text-gray-600 text-center mb-8 max-w-lg mx-auto">
+                    Based on Carl Jung's revolutionary work on the human psyche, this test helps you identify your dominant archetype.
+                </p>
+
                 <!-- Info Grid -->
                 <div class="grid md:grid-cols-2 gap-6 mb-8">
                     <!-- What to Expect -->
-                    <div class="rounded-lg p-5" style="background-color: rgba(255,255,255,0.1);">
+                    <div class="bg-gray-50 rounded-lg p-5">
                         <div class="flex items-center mb-3">
                             <span class="text-2xl mr-2">📊</span>
-                            <h3 class="font-semibold text-white">What to Expect:</h3>
+                            <h3 class="font-semibold text-gray-900">What to Expect:</h3>
                         </div>
-                        <ul class="text-sm text-gray-200 space-y-2">
+                        <ul class="text-sm text-gray-700 space-y-2">
                             <li class="flex items-start">
                                 <span class="mr-2">•</span>
                                 <span>60 carefully selected questions</span>
@@ -94,12 +108,12 @@
                     </div>
                     
                     <!-- Test Duration -->
-                    <div class="rounded-lg p-5" style="background-color: rgba(255,255,255,0.1);">
+                    <div class="bg-gray-50 rounded-lg p-5">
                         <div class="flex items-center mb-3">
                             <span class="text-2xl mr-2">⏱️</span>
-                            <h3 class="font-semibold text-white">Test Duration:</h3>
+                            <h3 class="font-semibold text-gray-900">Test Duration:</h3>
                         </div>
-                        <ul class="text-sm text-gray-200 space-y-2">
+                        <ul class="text-sm text-gray-700 space-y-2">
                             <li class="flex items-start">
                                 <span class="mr-2">•</span>
                                 <span>Estimated time: 12 minutes</span>
@@ -121,12 +135,12 @@
                 </div>
                 
                 <!-- Your Benefits -->
-                <div class="rounded-lg p-6 mb-8" style="background-color: rgba(255,255,255,0.1);">
-                    <div class="flex items-center justify-center mb-3">
+                <div class="bg-cyan-50 rounded-lg p-6 mb-8">
+                    <div class="flex items-center justify-center mb-4">
                         <span class="text-2xl mr-2">🎯</span>
-                        <h3 class="font-semibold text-white">Your Benefits:</h3>
+                        <h3 class="font-semibold text-gray-900">Your Benefits:</h3>
                     </div>
-                    <div class="benefit-grid text-sm text-gray-200">
+                    <div class="benefit-grid text-sm text-gray-700">
                         <div class="flex items-start">
                             <span class="mr-2">•</span>
                             <span>Better self-understanding</span>
@@ -155,11 +169,14 @@
                 </div>
                 
                 <!-- Contact Details Form -->
-                <div class="bg-white rounded-lg p-6 mb-6">
+                <div class="bg-white border-2 border-gray-200 rounded-lg p-6 mb-6">
                     <div class="flex items-center justify-center mb-4">
                         <span class="text-2xl mr-2">📄</span>
                         <h3 class="font-semibold text-gray-900">Your Contact Details for the Analysis</h3>
                     </div>
+                    <p class="text-sm text-gray-600 text-center mb-6">
+                        Please enter your details so we can send you your detailed archetype analysis via email.
+                    </p>
                     
                     <form id="intro-user-form" class="space-y-4">
                         <div>
@@ -186,19 +203,6 @@
                             >
                         </div>
                         
-                        <!-- Newsletter Checkbox -->
-                        <div class="flex items-start">
-                            <input 
-                                type="checkbox" 
-                                id="newsletter-optin" 
-                                name="newsletter" 
-                                class="mt-1 h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded cursor-pointer"
-                            >
-                            <label for="newsletter-optin" class="ml-3 text-sm text-gray-600 cursor-pointer">
-                                Yes, I'd like to receive occasional insights on career transformation and Jungian psychology from The Small Reset.
-                            </label>
-                        </div>
-                        
                         <div class="bg-blue-50 rounded-lg p-3 text-xs text-blue-800">
                             📧 You will receive your detailed archetype evaluation with business recommendations via email.
                         </div>
@@ -206,9 +210,6 @@
                         <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 px-6 rounded-lg transition duration-200 shadow-md hover:shadow-lg text-lg">
                             Start Test Now
                         </button>
-                        
-                        <!-- Copyright -->
-                        <p class="text-center text-xs text-gray-600 mt-4">© 2025 The Small Reset. All rights reserved.</p>
                     </form>
                 </div>
             </div>
@@ -307,6 +308,14 @@
         </div>
 
     </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-12">
+        <div class="max-w-4xl mx-auto px-4 py-6 text-center text-gray-600 text-sm">
+            <p>Based on Carl Jung's Archetype Theory</p>
+            <p class="mt-2">© 2024 Business Archetypes Assessment. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="js/questions.js"></script>
