@@ -23,16 +23,12 @@ class ArchetypenTest {
     
     // Get user information
     const formData = new FormData(e.target);
-    const newsletterCheckbox = document.getElementById('newsletter-optin');
-    
     this.userInfo = {
       name: formData.get('name').trim(),
-      email: formData.get('email').trim(),
-      newsletterOptIn: newsletterCheckbox ? newsletterCheckbox.checked : false
+      email: formData.get('email').trim()
     };
     
     console.log('👤 User info captured:', this.userInfo.name, this.userInfo.email);
-    console.log('📰 Newsletter opt-in:', this.userInfo.newsletterOptIn);
     
     // Start the test
     this.startTest();
@@ -172,12 +168,10 @@ class ArchetypenTest {
         archetype: this.results[0].name,
         archetypePercentage: this.results[0].percentage,
         top3Results: top3,
-        businessRecommendation: businessRec,
-        newsletterOptIn: this.userInfo.newsletterOptIn
+        businessRecommendation: businessRec
       };
       
       console.log('📤 Data being sent:', data);
-      console.log('📰 Newsletter opt-in:', this.userInfo.newsletterOptIn);
       
       const response = await fetch('/api/mailerlite', {
         method: 'POST',
@@ -192,9 +186,6 @@ class ArchetypenTest {
       if (response.ok) {
         console.log('✅ Successfully added to MailerLite:', result);
         console.log('📧 Email sequence will be triggered automatically');
-        if (this.userInfo.newsletterOptIn) {
-          console.log('📰 User also added to newsletter group');
-        }
       } else {
         console.warn('⚠️ MailerLite API warning:', result);
       }
